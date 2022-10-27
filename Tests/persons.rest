@@ -1,0 +1,51 @@
+GET http://localhost:7071/api/persons HTTP/1.1
+
+###
+
+POST http://localhost:7071/api/persons HTTP/1.1
+content-Type: application/json
+
+{
+    "firstName": "Tibo",
+    "lastName": "Messiaen",
+    "eMail": "tibomessiaen@gmail.com",
+    "age": 19,
+    "locations": [
+        {
+            "city": "Kortrijk",
+            "street": "Graaf Karel De Goedelaan"
+        },
+        {
+            "city": "Brugge",
+            "street": "Sporthal"
+        }
+    ]
+}
+
+
+###
+
+DELETE http://localhost:7071/api/person/1df0515f-b252-4759-8460-dc0f27aa0c85 HTTP/1.1
+
+###
+
+PUT http://localhost:7071/api/person HTTP/1.1
+content-Type: application/json
+
+{
+    "id": "aff1e142-d2ad-4870-adfd-8bb738e34d0f",
+    "firstName": "Tibo 2",
+    "lastName": "Messiaen 2",
+    "eMail": "tibomessiaen@gmail.com",
+    "age": 19,
+    "locations": [
+        {
+            "city": "Kortrijk",
+            "street": "Graaf Karel De Goedelaan"
+        },
+        {
+            "city": "Brugge",
+            "street": "Sporthal"
+        }
+    ]
+}
